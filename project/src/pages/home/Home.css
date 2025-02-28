@@ -1,0 +1,19 @@
+
+.hero-section {
+    background: url("../../assets/image.jpeg") center/cover no-repeat;
+    height: 50vh;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .service-card {
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
