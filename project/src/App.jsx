@@ -4,7 +4,7 @@ import Footer from "./components/common/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Errorpage from "./pages/Errorpage";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import Register from "./components/forms/Register";
 import Login from "./components/forms/Login";
 
