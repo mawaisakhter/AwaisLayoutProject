@@ -1,0 +1,37 @@
+.custom-navbar {
+    /* background-color: #712CF9 !important;  */
+    padding: 12px 10px;
+  }
+  
+  .custom-navbar .nav-link {
+    color: #cfcdcd !important; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #fff !important; 
+  }
+  
+  .footer{
+    margin-top: 50px;
+  }
+
+  .footer-link {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .social-icon {
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #fff;
+  }
+  
