@@ -1,0 +1,124 @@
+/* Root animation */
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(50);
+    opacity: 0;
+  }
+}
+.animate-expand {
+  animation: expand 1s forwards ease-in-out;
+}
+/* Navbar */
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+.group:hover span {
+  animation: moveUpDown 0.3s ease-in-out forwards;
+}
+
+
+/* Service */
+@keyframes moveButton {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes moveArrow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(5px); }
+}
+
+.button-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-hover:hover {
+  animation: moveButton 0.4s ease-in-out forwards;
+}
+
+.button-hover:hover img {
+  animation: moveArrow 0.3s ease-in-out forwards;
+}
+
+/* Arrow down on hover */
+@keyframes moveArrowDown {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(5px) scale(0.92); } /* 2/3 size */
+}
+
+.arrow-hover img {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.arrow-hover:hover img {
+  animation: moveArrowDown 0.3s ease-in-out forwards;
+  filter: brightness(0) invert(1); 
+}
+
+
+/* move LINE */
+@keyframes moveLine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .animate-moveLine {
+    animation: moveLine 10s linear infinite;
+    background: linear-gradient(to right, #4dca04, transparent);
+    height: 2px;
+    width: 100%;
+  }
+  
+/* /////// */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 10s linear infinite;
+}
+
+
+/* panter */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+/*  */
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
